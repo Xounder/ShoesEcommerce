@@ -1,0 +1,162 @@
+.bt-green {
+    background-color: #088178;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+    padding: 11px 20px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#head-banner {
+    background-image: url(img/about/banner.png);
+    background-position: center;
+}
+
+#cart-prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#cart-prod img {
+    width: 50px;
+}
+
+#cart-prod input {
+    width: 20%;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+#table-prod th {
+    padding: 15px 7px;
+    font-size: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;
+    border-left: none;
+    width: 15%;
+}
+
+#table-prod th:nth-child(3) {
+    width: 40%;
+}
+
+#table-prod td {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+#table-prod td a {
+    text-decoration: none;
+    color: #222;
+}
+
+#payment {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 40px;
+}
+
+#payment h4 {
+    padding: 10px 0;
+}
+
+#coupon {
+    margin-bottom: 40px;
+}
+
+#input-coupon {
+    display: flex;
+    justify-content: center;
+}
+
+#input-coupon input {
+    width: 100%;
+    padding: 5px 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#cart-total {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#table-payment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#table-payment th {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 7px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#table-payment td {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 7px;
+    text-align: left;
+    font-size: 11px;
+}
+
+@media screen and (min-width:700px) {
+    #cart-prod img {
+        width: 60px;
+    }
+
+    #table-prod th {
+        font-size: 12px;
+    }
+    
+    #table-prod td {
+        font-size: 12px;
+    }
+
+    #payment {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    
+    #coupon {
+        margin-bottom: 0;
+        margin-right: 40px;
+        width: 40%;
+    }
+
+    #cart-total {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    #cart-prod img {
+        width: 70px;
+    }
+
+    #table-prod th {
+        font-size: 13px;
+    }
+    
+    #table-prod td {
+        font-size: 14px;
+    }
+
+    #coupon {
+        width: 35%;
+    }
+}
